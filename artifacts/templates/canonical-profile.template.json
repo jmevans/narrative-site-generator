@@ -1,0 +1,69 @@
+{
+  "profile": {
+    "name": "",
+    "current_title": "",
+    "location": "",
+    "short_identity_statement": "",
+    "target_audience": [],
+    "primary_goal": "",
+    "tone_preferences": [],
+    "avoidances": []
+  },
+  "career": {
+    "roles": [],
+    "companies": [],
+    "industries": [],
+    "skills": [],
+    "metrics": [],
+    "case_studies": []
+  },
+  "life_story": {
+    "defining_moments": [],
+    "adventures": [],
+    "travels": [],
+    "values": [],
+    "personal_philosophy": ""
+  },
+  "media_assets": [],
+  "claims": [],
+  "site_strategy": {
+    "positioning": "",
+    "narrative_arc": "",
+    "sections": [],
+    "primary_cta": "",
+    "secondary_cta": ""
+  },
+  "design_system": {
+    "theme_name": "",
+    "emotional_intent": "",
+    "audience_signal": "",
+    "colors": {},
+    "typography": {},
+    "layout_style": "",
+    "component_style": "",
+    "cta_style": "",
+    "accessibility_notes": []
+  },
+  "motion_plan": {
+    "motion_style_name": "",
+    "principles": [],
+    "animations": [],
+    "media_motion_plan": []
+  },
+  "site_plan": {
+    "site_map": [],
+    "navigation": [],
+    "interaction_model": "",
+    "mobile_notes": [],
+    "content_gaps": []
+  },
+  "content_blocks": [],
+  "open_questions": [],
+  "confidence": {
+    "profile": 0,
+    "career": 0,
+    "life_story": 0,
+    "media": 0,
+    "design": 0
+  }
+}

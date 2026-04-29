@@ -1,0 +1,37 @@
+# Dependencies
+node_modules/
+website-template/node_modules/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Next.js
+website-template/.next/
+website-template/out/
+
+# Build outputs
+dist/
+build/
+
+# Runtime artifacts (generated per person — not committed to blueprint repo)
+artifacts/generated/
+.generated/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Claude Code local overrides
+.claude/settings.local.json

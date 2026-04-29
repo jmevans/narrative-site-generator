@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://narrativesite.ai/schemas/canonical-profile.schema.json",
+  "title": "Canonical Profile",
+  "type": "object",
+  "required": ["profile", "career", "life_story", "media_assets", "claims", "site_strategy", "confidence", "open_questions"],
+  "properties": {
+    "profile": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "current_title": { "type": "string" },
+        "location": { "type": "string" },
+        "short_identity_statement": { "type": "string" },
+        "target_audience": { "type": "array", "items": { "type": "string" } },
+        "primary_goal": { "type": "string" },
+        "tone_preferences": { "type": "array", "items": { "type": "string" } },
+        "avoidances": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "career": {
+      "type": "object",
+      "properties": {
+        "roles": { "type": "array" },
+        "companies": { "type": "array" },
+        "industries": { "type": "array" },
+        "skills": { "type": "array" },
+        "metrics": { "type": "array" },
+        "case_studies": { "type": "array" }
+      },
+      "additionalProperties": false
+    },
+    "life_story": {
+      "type": "object",
+      "properties": {
+        "defining_moments": { "type": "array" },
+        "adventures": { "type": "array" },
+        "travels": { "type": "array" },
+        "values": { "type": "array" },
+        "personal_philosophy": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "media_assets": {
+      "type": "array",
+      "items": { "$ref": "./media-asset.schema.json" }
+    },
+    "claims": {
+      "type": "array",
+      "items": { "$ref": "./claim.schema.json" }
+    },
+    "site_strategy": {
+      "type": "object",
+      "properties": {
+        "positioning": { "type": "string" },
+        "narrative_arc": { "type": "string" },
+        "sections": { "type": "array" },
+        "primary_cta": { "type": "string" },
+        "secondary_cta": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "design_system": { "$ref": "./design-system.schema.json" },
+    "motion_plan": { "$ref": "./motion-plan.schema.json" },
+    "site_plan": { "$ref": "./site-plan.schema.json" },
+    "content_blocks": { "type": "array" },
+    "open_questions": { "type": "array", "items": { "type": "string" } },
+    "confidence": {
+      "type": "object",
+      "properties": {
+        "profile": { "type": "number", "minimum": 0, "maximum": 1 },
+        "career": { "type": "number", "minimum": 0, "maximum": 1 },
+        "life_story": { "type": "number", "minimum": 0, "maximum": 1 },
+        "media": { "type": "number", "minimum": 0, "maximum": 1 },
+        "design": { "type": "number", "minimum": 0, "maximum": 1 }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://narrativesite.ai/schemas/agent-output.schema.json",
+  "title": "Agent Output",
+  "type": "object",
+  "required": ["agent", "stage", "skills_used", "artifact_updates", "open_questions"],
+  "properties": {
+    "agent": { "type": "string" },
+    "stage": { "type": "string" },
+    "skills_used": { "type": "array", "items": { "type": "string" } },
+    "artifact_updates": { "type": "array" },
+    "handoff": { "$ref": "./agent-handoff.schema.json" },
+    "open_questions": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

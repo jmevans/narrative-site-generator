@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://narrativesite.ai/schemas/site-plan.schema.json",
+  "title": "Site Plan",
+  "type": "object",
+  "required": ["site_map", "navigation", "interaction_model", "mobile_notes", "content_gaps"],
+  "properties": {
+    "site_map": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["page", "sections"],
+        "properties": {
+          "page": { "type": "string" },
+          "sections": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["id", "name", "purpose", "content_blocks", "media_assets", "animation", "cta"],
+              "properties": {
+                "id": { "type": "string" },
+                "name": { "type": "string" },
+                "purpose": { "type": "string" },
+                "content_blocks": { "type": "array" },
+                "media_assets": { "type": "array", "items": { "type": "string" } },
+                "animation": { "type": "string" },
+                "cta": { "type": "string" }
+              },
+              "additionalProperties": false
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "navigation": { "type": "array", "items": { "type": "string" } },
+    "interaction_model": { "type": "string" },
+    "mobile_notes": { "type": "array", "items": { "type": "string" } },
+    "content_gaps": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

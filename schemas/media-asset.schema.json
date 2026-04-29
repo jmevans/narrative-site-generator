@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://narrativesite.ai/schemas/media-asset.schema.json",
+  "title": "Media Asset",
+  "type": "object",
+  "required": ["id", "type", "description", "quality_score", "recommended_use", "visibility"],
+  "properties": {
+    "id": { "type": "string" },
+    "type": {
+      "type": "string",
+      "enum": ["image", "video", "document", "screenshot", "audio", "artifact"]
+    },
+    "path_or_url": { "type": "string" },
+    "description": { "type": "string" },
+    "people": { "type": "array", "items": { "type": "string" } },
+    "location": { "type": "string" },
+    "date": { "type": "string" },
+    "quality_score": { "type": "number", "minimum": 0, "maximum": 5 },
+    "emotional_signal": { "type": "string" },
+    "professional_signal": { "type": "string" },
+    "recommended_use": {
+      "type": "string",
+      "enum": ["hero", "case_study", "life_scene", "process", "gallery", "background", "transition", "unused"]
+    },
+    "animation_potential": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "animation_notes": { "type": "string" },
+    "privacy_notes": { "type": "string" },
+    "visibility": {
+      "type": "string",
+      "enum": ["public", "private_context", "ask_before_using", "never_use"]
+    }
+  },
+  "additionalProperties": false
+}

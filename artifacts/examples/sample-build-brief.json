@@ -1,0 +1,11 @@
+{
+  "stack": ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+  "template": "website-template",
+  "content_source": "content/site.ts",
+  "requirements": [
+    "semantic HTML",
+    "responsive sections",
+    "reduced-motion support",
+    "no private facts in generated code"
+  ]
+}

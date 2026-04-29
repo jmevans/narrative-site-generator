@@ -1,0 +1,94 @@
+{
+  "profile": {
+    "name": "Sample Person",
+    "current_title": "Product-minded engineering leader",
+    "location": "",
+    "short_identity_statement": "Builds practical AI systems from ambiguous ideas.",
+    "target_audience": ["technical founders", "hiring managers"],
+    "primary_goal": "attract consulting and leadership opportunities",
+    "tone_preferences": ["clear", "credible", "human"],
+    "avoidances": ["hype", "unsupported metrics"]
+  },
+  "career": {
+    "roles": [],
+    "companies": [],
+    "industries": ["AI", "software"],
+    "skills": ["product strategy", "frontend engineering", "AI prototyping"],
+    "metrics": [],
+    "case_studies": []
+  },
+  "life_story": {
+    "defining_moments": [],
+    "adventures": [],
+    "travels": [],
+    "values": ["clarity", "craft", "momentum"],
+    "personal_philosophy": ""
+  },
+  "media_assets": [],
+  "claims": [
+    {
+      "id": "claim-001",
+      "claim": "The user builds practical AI systems from ambiguous ideas.",
+      "type": "achievement",
+      "source": "user_statement",
+      "status": "confirmed",
+      "evidence": [],
+      "visibility": "public",
+      "confidence": 0.8,
+      "approved_for_public_use": true,
+      "notes": "Sample only."
+    }
+  ],
+  "site_strategy": {
+    "positioning": "A credible, story-driven site for an engineering leader working with AI.",
+    "narrative_arc": "From ambiguity to shipped systems.",
+    "sections": ["hero", "work", "principles", "contact"],
+    "primary_cta": "Start a conversation",
+    "secondary_cta": "View work"
+  },
+  "design_system": {
+    "theme_name": "Graphite and Signal",
+    "emotional_intent": "clarity, authority, momentum",
+    "audience_signal": "technical but business-aware",
+    "colors": {
+      "background": "#0B0D10",
+      "surface": "#181B20",
+      "primary_text": "#F3F5F7",
+      "secondary_text": "#B7C0CC",
+      "accent": "#4ADE80",
+      "accent_secondary": "#7DD3FC",
+      "success_or_metric": "#4ADE80"
+    },
+    "typography": {
+      "heading": "Inter or similar grotesk",
+      "body": "Inter or similar sans",
+      "mono_or_detail": "JetBrains Mono or similar"
+    },
+    "layout_style": "dense editorial sections with clear hierarchy",
+    "component_style": "sharp cards, thin borders, restrained surfaces",
+    "cta_style": "direct text labels with strong contrast",
+    "accessibility_notes": ["Verify contrast in final theme."]
+  },
+  "motion_plan": {
+    "motion_style_name": "Measured Reveal",
+    "principles": ["Reveal hierarchy", "Avoid constant motion"],
+    "animations": [],
+    "media_motion_plan": []
+  },
+  "site_plan": {
+    "site_map": [],
+    "navigation": ["Work", "Principles", "Contact"],
+    "interaction_model": "single-page homepage with expandable case studies",
+    "mobile_notes": ["Stack sections in narrative order."],
+    "content_gaps": ["Real projects and metrics needed."]
+  },
+  "content_blocks": [],
+  "open_questions": ["Which projects should be public?"],
+  "confidence": {
+    "profile": 0.5,
+    "career": 0.2,
+    "life_story": 0.1,
+    "media": 0,
+    "design": 0.4
+  }
+}

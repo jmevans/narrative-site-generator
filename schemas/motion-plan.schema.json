@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://narrativesite.ai/schemas/motion-plan.schema.json",
+  "title": "Motion Plan",
+  "type": "object",
+  "required": ["motion_style_name", "principles", "animations", "media_motion_plan"],
+  "properties": {
+    "motion_style_name": { "type": "string" },
+    "principles": { "type": "array", "items": { "type": "string" } },
+    "animations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["element", "trigger", "effect", "duration_ms", "reduced_motion_fallback"],
+        "properties": {
+          "element": { "type": "string" },
+          "trigger": {
+            "type": "string",
+            "enum": ["load", "scroll", "hover", "click", "route_change"]
+          },
+          "effect": { "type": "string" },
+          "duration_ms": { "type": "integer", "minimum": 0 },
+          "easing": { "type": "string" },
+          "purpose": { "type": "string" },
+          "reduced_motion_fallback": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "media_motion_plan": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "asset_id": { "type": "string" },
+          "effect": { "type": "string" },
+          "tool_option": {
+            "type": "string",
+            "enum": ["css", "framer_motion", "gsap", "ai_video", "ffmpeg"]
+          },
+          "notes": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

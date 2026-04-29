@@ -1,0 +1,4 @@
+﻿# Animation Guidelines
+
+- Subtle
+- Intentional

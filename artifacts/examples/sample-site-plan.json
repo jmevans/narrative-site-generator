@@ -1,0 +1,22 @@
+{
+  "site_map": [
+    {
+      "page": "home",
+      "sections": [
+        {
+          "id": "hero",
+          "name": "Hero",
+          "purpose": "Establish identity, audience fit, and CTA.",
+          "content_blocks": ["headline", "subheadline", "primary_cta"],
+          "media_assets": [],
+          "animation": "subtle load reveal",
+          "cta": "Start a conversation"
+        }
+      ]
+    }
+  ],
+  "navigation": ["Work", "Principles", "Contact"],
+  "interaction_model": "single-page site",
+  "mobile_notes": ["Keep hero concise and CTA visible."],
+  "content_gaps": ["Add real work examples."]
+}

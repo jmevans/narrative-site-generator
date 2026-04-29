@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://narrativesite.ai/schemas/agent-handoff.schema.json",
+  "title": "Agent Handoff",
+  "type": "object",
+  "required": ["from_agent", "to_agent", "task", "relevant_context", "constraints", "known_facts", "assumptions", "open_questions"],
+  "properties": {
+    "from_agent": { "type": "string" },
+    "to_agent": { "type": "string" },
+    "task": { "type": "string" },
+    "relevant_context": { "type": "object" },
+    "constraints": { "type": "array", "items": { "type": "string" } },
+    "required_output_schema": { "type": "object" },
+    "known_facts": { "type": "array" },
+    "assumptions": { "type": "array" },
+    "open_questions": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

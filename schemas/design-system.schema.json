@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://narrativesite.ai/schemas/design-system.schema.json",
+  "title": "Design System",
+  "type": "object",
+  "required": ["theme_name", "emotional_intent", "colors", "typography", "layout_style", "component_style", "cta_style"],
+  "properties": {
+    "theme_name": { "type": "string" },
+    "emotional_intent": { "type": "string" },
+    "audience_signal": { "type": "string" },
+    "colors": {
+      "type": "object",
+      "properties": {
+        "background": { "type": "string" },
+        "surface": { "type": "string" },
+        "primary_text": { "type": "string" },
+        "secondary_text": { "type": "string" },
+        "accent": { "type": "string" },
+        "accent_secondary": { "type": "string" },
+        "success_or_metric": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "typography": {
+      "type": "object",
+      "properties": {
+        "heading": { "type": "string" },
+        "body": { "type": "string" },
+        "mono_or_detail": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "layout_style": { "type": "string" },
+    "component_style": { "type": "string" },
+    "cta_style": { "type": "string" },
+    "accessibility_notes": { "type": "array", "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

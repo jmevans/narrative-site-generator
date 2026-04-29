@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://narrativesite.ai/schemas/story-unit.schema.json",
+  "title": "Story Unit",
+  "type": "object",
+  "required": ["id", "title", "type", "context", "challenge", "action", "result", "meaning", "confidence", "visibility"],
+  "properties": {
+    "id": { "type": "string" },
+    "title": { "type": "string" },
+    "type": {
+      "type": "string",
+      "enum": ["career", "project", "adventure", "philosophy", "origin", "transition"]
+    },
+    "context": { "type": "string" },
+    "challenge": { "type": "string" },
+    "action": { "type": "string" },
+    "result": { "type": "string" },
+    "meaning": { "type": "string" },
+    "evidence": { "type": "array", "items": { "type": "string" } },
+    "claim_ids": { "type": "array", "items": { "type": "string" } },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "visibility": {
+      "type": "string",
+      "enum": ["public", "private_context", "ask_before_using", "never_use"]
+    },
+    "recommended_section": { "type": "string" }
+  },
+  "additionalProperties": false
+}
