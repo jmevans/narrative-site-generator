@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  color-scheme: light;
+  color-scheme: dark;
 }
 
 html {
@@ -10,9 +10,38 @@ html {
 
 body {
   margin: 0;
-  background: #f8fafc;
-  color: #020617;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #16181f;
+  color: #f2ede6;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+.font-heading {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+.font-body {
+  font-family: var(--font-inter), system-ui, sans-serif;
+}
+
+.section-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 clamp(28px, 8vw, 168px);
+  box-sizing: border-box;
+}
+
+@media (min-width: 1600px) {
+  .section-container {
+    max-width: 1536px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-container {
+    padding: 0 24px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
